@@ -1,0 +1,38 @@
+@import "./header";
+@import "./content";
+@import "./about";
+@import "./fotter";
+@import "./colores.scss";
+
+* {
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Utility classes */
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark {
+    color: #222222;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mb-7 {
+    margin-bottom: 7px;
+    ;
+}
+
+.mb-18 {
+    margin-bottom: 18px;
+}

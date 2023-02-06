@@ -1,0 +1,97 @@
+@import "./colores.scss";
+
+.header{
+    height: 56px;
+    background-color: $color1;
+    background-image: url("/icon/header\ pattern\ image.png");
+    padding: 0 30px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color11;
+
+    .left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo-img{
+            height: 35.99px;
+            margin-right: 134.02px;
+        }
+    }
+    .right{
+        .navbar{
+            display: flex;
+            font-size: 14px;
+            list-style: none;
+            width: 550px;
+            align-items: center;
+            justify-content: end;
+            
+            li{
+                padding-left: 32px;
+            }
+            li a{
+                color: $color11;
+            }
+            .badge-container{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .badge3,.badge1,.badge2{
+                position:absolute;
+                width: 17px;
+                height: 18px;
+                font-size: 12px;
+                background-color: $color10;
+                color: $color8;
+                border-radius: 10px;
+                padding-top: 1.5px;
+            }
+            
+            .badge1{
+                right: -7px;
+                top: -7px;
+            }
+            .badge2{
+                right: -12px;
+                top: -11px;
+            }
+            .badge3{
+                right: -8px;
+                top: -6px;
+                font-size: 8px;
+                background-color: $color8;
+                color: $color7;
+                padding-top: 4px;
+            }
+            #i1{
+                width:32px ;
+                height: 32px;
+                border-radius: 20px;
+                border: 2px solid $color11;
+            }
+            .active{
+                color : $color8;
+            }
+            
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 870px){
+    .right{
+        display: none;
+    }
+}
+@media screen and (min-width: 871px){
+    .hamburgmenu{
+        display: none;
+    }
+}

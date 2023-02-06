@@ -1,0 +1,31 @@
+@import "./colores.scss";
+
+.footer {
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: $color12;
+
+    p {
+        color: $color13;
+        height: 15px;
+        height: 15px;
+
+        span{
+            color: $color13;
+            height: 15px;
+        }
+    }
+
+    img {
+        height: 24px;
+        width: 90px;
+    }
+
+    span {
+        color: #0000001F;
+        padding-left: 8px;
+        padding-right: 10px;
+    }
+}
