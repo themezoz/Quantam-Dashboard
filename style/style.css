@@ -152,8 +152,10 @@
 }
 .content .card-display .card {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 80% 20%;
+  width: 476px;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   -moz-column-gap: 16px;
        column-gap: 16px;
   background-color: #FFFFFF;
