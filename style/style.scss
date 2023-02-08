@@ -4,10 +4,14 @@
 @import "./fotter";
 @import "./colores.scss";
 
+body{
+    background-color: $color14 ;
+}
 * {
     margin: 0; 
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 a{
