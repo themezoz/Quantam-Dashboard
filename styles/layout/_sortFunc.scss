@@ -1,0 +1,27 @@
+@import '../abstracts/mixins';
+
+.other-func {
+    @include flex(space-between, center);
+    margin-bottom: 17px;
+    height: 28px;
+    .sortby-func {
+        display: flex;
+        align-items: center;
+        #sortby-select {
+            width: 170px;
+            display: inline-block;
+            background-color: #EEEEEE;
+            height: 20px;
+            padding: 0px 0px 2px 6px;
+            font-size: 16px;
+            color: #333333;
+            font-family: 'Quicksand';
+            box-sizing: content-box;
+        }
+        #sort-icon {
+            margin-left: 24px;
+        }
+    }
+}
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quantum portal login page.">
+    <meta name="keywords" content="Login, Quantum, Quantum login">
+    <title>Login-Quantum</title>
+    <link
+      rel="preload"
+      href="./quantum-screen-assets/Quicksand-font/Quicksand-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="header">
+        <img
+          class="header-img"
+          src="./quantum-screen-assets/icons/logo used in header.svg"
+          alt=""
+        />
+      </div>
+
+      <!-- header completed here -->
+
+      <div class="login-container">
+        <div class="form-container">
+          <h3>
+            <img src="./quantum-screen-assets/icons/back.svg" alt="" />
+            <div>Log in with Quantum</div>
+          </h3>
+
+          <form action="">
+            <div class="form-group radio-ip-line">
+              <input
+                type="radio"
+                name="schoolType"
+                id="district"
+                value="district"
+              />
+              <label for="district">District</label>
+              <input
+                type="radio"
+                name="schoolType"
+                id="independentSchool"
+                value="independentSchool"
+              />
+              <label for="independentSchool">Independent school</label>
+            </div>
+
+            <div id="state-ip-group" class="form-group">
+              <label class="small-label" for="state">State*</label>
+              <select name="state" id="state">
+                <option value="a">Alabama</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+              </select>
+            </div>
+            <div id="district-ip-group" class="form-group">
+              <label id="dist-label" class="small-label" for="district-dropdown"
+                >District*</label
+              >
+              <select name="district" id="district-dropdown">
+                <option value="a">Alabama School District</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+                <option value="e">e</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                class="text-ip"
+                name="username"
+                id="username"
+                placeholder="Username/Email ID*"
+              />
+              <a href="#forgotUsername"><small>FORGOT USERNAME?</small></a>
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="text-ip"
+                name="password"
+                id="password"
+                placeholder="Password*"
+              />
+              <img id="password-visibility-icon" src="/quantum-screen-assets/icons/eye_view.svg" alt="eye icon to view password">
+              <a href="#forgotPassword"><small>FORGOT PASSWORD?</small></a>
+            </div>
+
+            <div class="form-group radio-ip-line" id="remember-me-line">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Remember Me</label>
+            </div>
+
+            <button type="submit" class="login-btn">LOG IN</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="upper-footer">
+          <a href="#">About</a>&nbsp;|&nbsp;<a href="#">Contact Us</a>
+        </div>
+        <div class="lower-footer">
+          <img
+            class="header-img"
+            src="./quantum-screen-assets/icons/logo used in footer.svg"
+            alt=""
+          />
+          <span class="footer-pipline">&nbsp;|&nbsp;</span>
+          Copyright &copy; 2020-2021 &nbsp;<strong>Zeus SystemsPvt. Ltd.</strong
+          >&nbsp; All rights reserved.
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/login.js"></script>
+  </body>
+</html>

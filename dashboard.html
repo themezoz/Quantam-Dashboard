@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard-Quantum</title>
+    <link
+      rel="preload"
+      href="./quantum-screen-assets/Quicksand-font/Quicksand-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- for Museo Sans 500 fonts -->
+    <!-- <link href="https://www.dafontfree.net/embed/bXVzZW8tc2Fucy01MDAmZGF0YS80MS9tLzk1MDcyL011c2VvU2Fuc181MDAub3Rm" rel="stylesheet" type="text/css"/> -->
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="header" id="dashboard-header">
+        <img
+          class="header-img"
+          src="./quantum-screen-assets/icons/logo used in header.svg"
+          alt=""
+        />
+
+        <nav>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+          <ul class="res-navbar">
+            <li><a href="#dashboard" class="active">DASHBOARD</a></li>
+            <li><a href="#content">CONTENT</a></li>
+            <li><a href="#users">USERS</a></li>
+            <li><a href="#reports">REPORTS</a></li>
+            <li><a href="#admin">ADMIN</a></li>
+          </ul>
+
+          <div class="fixed-nav-items">
+            <div class="fixed-nav-item" id="alert-id">
+              <a href="#" 
+                ><img id="alert-icon" src="./quantum-screen-assets/icons/alerts.svg" alt="" />
+                <span class="nav-badge" id="alert-badge"> 2 </span>
+              </a>
+              <div id="alert-container" class="hover-container">
+                
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">License for Introduction to Algebra has been assigned to your school
+                    </h3>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">Lesson 3 Practice Worksheet overdue for Amy Santiago
+                    </h3>
+                      <span class="material-icons icon">&#xE86C;</span>
+                  </div>
+
+                  <div class="course-info">
+                    <span>Course: </span>Advanced Mathematics
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 05:21 pm 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">
+                      23 new students created
+                    </h3>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                      <!-- <span class="material-icons md-12">attach_file</span>
+                        2 files are attached -->
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">
+                      15 submissions ready for evaluation
+                    </h3>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="course-info">
+                    <span>Course: </span>Basics of Algebra
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">License for Introduction to Algebra has been assigned to your school
+                    </h3>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">Lesson 3 Practice Worksheet overdue for Amy Santiago
+                    </h3>
+                      <span class="material-icons icon">&#xE86C;</span>
+                  </div>
+
+                  <div class="course-info">
+                    <span>Course: </span>Advanced Mathematics
+                  </div>
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">
+                      23 new students created
+                    </h3>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">
+                      15 submissions ready for evaluation
+                    </h3>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="course-info">
+                    <span>Course: </span>Basics of Algebra
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fixed-container-footer">
+                  <button>show all</button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="fixed-nav-item" id="announcement-id">
+              <a href="#" 
+                ><img id="announcement-icon"
+                  src="./quantum-screen-assets/icons/announcements.svg"
+                  alt=""
+                />
+                <span class="nav-badge" id="announcements-badge"> 1 </span>
+              </a>
+
+              <div id="announcements-container" class="hover-container">
+                
+                <div class="hover-card">
+                  <div class="title">
+                    <div>
+                      <span class="pa-block"><span class="pa">PA:</span> Wilson Kumar</span>
+                      <h3 class="multine-ellipsis">
+                        No classes will be held on 21st Nov
+                      </h3>
+                    </div>
+                      <span class="material-icons icon">&#xE86C;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                      <span class="material-icons md-12">attach_file</span>
+                        2 files are attached
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <div>
+                      <span class="pa-block"><span class="pa">PA:</span> Samson White</span>
+                      <h3 class="multine-ellipsis">
+                        Guest lecture on Geometry on 20th September
+                      </h3>
+                    </div>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                      <span class="material-icons md-12">attach_file</span>
+                        2 files are attached
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="hover-card">
+                  <div class="title">
+                    <div>
+                      <span class="pa-block"><span class="pa">PA:</span> Wilson Kumar</span>
+                      <h3 class="multine-ellipsis">
+                        Additional course materials available on request
+                      </h3>
+                    </div>
+                      <span class="material-icons icon">&#xE86C;</span>
+                  </div>
+
+                  <div class="course-info">
+                    <span>Course: </span>Mathematics 101
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                      <!-- <span class="material-icons md-12">attach_file</span>
+                        2 files are attached -->
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <div>
+                      <span class="pa-block"><span class="pa">PA:</span> Wilson Kumar</span>
+                      <h3 class="multine-ellipsis">
+                        No classes will be held on 21st Nov
+                      </h3>
+                    </div>
+                      <span class="material-icons icon">&#xE86C;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                      <span class="material-icons md-12">attach_file</span>
+                        2 files are attached
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <div>
+                      <span class="pa-block"><span class="pa">PA:</span> Samson White</span>
+                      <h3 class="multine-ellipsis">
+                        Guest lecture on Geometry on 20th September
+                      </h3>
+                    </div>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                      <span class="material-icons md-12">attach_file</span>
+                        2 files are attached
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="hover-card">
+                  <div class="title">
+                    <div>
+                      <span class="pa-block"><span class="pa">PA:</span> Wilson Kumar</span>
+                      <h3 class="multine-ellipsis">
+                        Additional course materials available on request
+                      </h3>
+                    </div>
+                      <span class="material-icons icon">&#xE86C;</span>
+                  </div>
+
+                  <div class="course-info">
+                    <span>Course: </span>Mathematics 101
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                      <!-- <span class="material-icons md-12">attach_file</span>
+                        2 files are attached -->
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="fixed-container-footer">
+                  <button>show all</button>
+                  <span>|</span>
+                  <button>create new</button>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="fixed-nav-item">
+              <a href="#"
+                ><img
+                  id="profile-icon"
+                  src="./quantum-screen-assets/icons/account_circle.svg"
+                  alt=""
+                />
+                <span class="nav-badge" id="profile-badge"> T </span>
+              </a>
+            </div>
+            <!-- for hamburger -->
+            <div class="fixed-nav-item"  id="hamburger-menu-div">
+              <a href="#" id="hamburger-menu">
+                <label for="nav-toggle" class="nav-toggle-label">
+                  <span>
+                    <img id="hamburger-icon"
+                      src="./quantum-screen-assets/icons/hamburger-menu.svg"
+                      alt=""
+                    />
+                  </span>
+                </label>
+              </a>
+              <div id="hamburger-container" class="hover-container">
+                <ul class="new-res-navbar" id="new-res-navbar-id">
+                  <li><a href="#dashboard" class="">DASHBOARD</a></li>
+                  <li>
+                    <!-- <span class="material-icons dropdown-btn-icon">&#xE5CF;</span> -->
+                    <a href="#content" class="dropdown-btn">CONTENT 
+                    </a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="">COURSE CATALOG</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#users" class="dropdown-btn">USERS</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="">submenu 1</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#reports" class="dropdown-btn">REPORTS</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="">submenu 1</a></li>
+                        <li><a href="">submenu 2</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#admin" class="dropdown-btn">ADMIN</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="">submenu 1</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <!-- <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">License for Introduction to Algebra has been assigned to your school
+                    </h3>
+                      <span class="material-icons icon">&#xE15D;</span>
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 07:21 pm 
+                    </div>
+                  </div>
+                </div>
+                <div class="hover-card">
+                  <div class="title">
+                    <h3 class="multine-ellipsis">Lesson 3 Practice Worksheet overdue for Amy Santiago
+                    </h3>
+                      <span class="material-icons icon">&#xE86C;</span>
+                  </div>
+
+                  <div class="course-info">
+                    <span>Course: </span>Advanced Mathematics
+                  </div>
+
+                  <div class="file-and-time">
+                    <div class="file">
+                    </div>
+                    <div class="time">
+                      15-Sep-2018 at 05:21 pm 
+                    </div>
+                  </div>
+                </div> -->
+                </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- header completed here -->
+
+      <div class="container">
+        <div class="nav-toggle">
+          <button class="nav-toggle-item active">
+            <img
+              src="./quantum-screen-assets/icons/courses.svg"
+              alt="courses icon"
+            />&nbsp; <span id="course-count" class="bold-num">0</span>&nbsp;Courses
+          </button>
+          <button class="nav-toggle-item">
+            <img
+              src="./quantum-screen-assets/icons/classes.svg"
+              alt="courses icon"
+            />&nbsp; <span id="class-count" class="bold-num">4</span>&nbsp;Classes
+          </button>
+        </div>
+
+        <!-- sortby-functionality -->
+        <div class="other-func">
+          <small id="showing-course-count"> showing 0 of 0 </small>
+
+          <div class="sortby-func">
+            <small>Sort&nbsp;By:</small>
+            <select id="sortby-select" name="sortby" id="sortby">
+              <option value="courseName">Course Name</option>
+              <option value="courseName">Course Duration</option>
+              <option value="courseName">Course Purchase</option></select
+            >
+            <img
+              id="sort-icon"
+              class="cursor-pointer"
+              src="./quantum-screen-assets/icons/sort.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <hr />
+
+        <div class="flex-container">
+          <div class="course-container">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="upper-footer">
+          <a href="#">About</a>&nbsp;|&nbsp;<a href="#">Contact Us</a>
+        </div>
+        <div class="lower-footer">
+          <img
+            class="header-img"
+            src="./quantum-screen-assets/icons/logo used in footer.svg"
+            alt=""
+          />
+          <span class="footer-pipline">&nbsp;|&nbsp;</span>
+          Copyright &copy; 2020-2021 &nbsp;<strong>Zeus SystemsPvt. Ltd.</strong
+          >&nbsp; All rights reserved.
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/scripts/hoverFunc.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
+  </body>
+</html>
